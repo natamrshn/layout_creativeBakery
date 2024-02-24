@@ -1,19 +1,80 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
     <title>Title</title>
-    <link
-      rel="stylesheet"
-      href="./styles/main.scss"
-    />
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet"
+          href="./styles/main.scss" />
   </head>
+
   <body>
-    <h1>Hello Mate Academy</h1>
+    <div class="container">
+      <header class="header">
+        <div class="header__content">
+          <img
+            src="./images/icons/Logo.svg"
+            alt="logo"
+            class="icon icon--logo"
+          >
+
+          <img
+            src="./images/icons/Icon-menu.svg"
+            alt="burger menu"
+            class="icon icon--menu"
+          >
+
+          <ul class="header__nav">
+            <li>
+              <a href="#">Products</a>
+            </li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li class="header__nav header__nav--contact-us">
+              <img src="./images/icons/Icon-phone.svg" alt="icon phone">
+              <a href="#">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+    </div>
+
+    <div class="container">
+      <div class="hero-section"></div>
+    </div>
+
+    <div class="container">
+      <aside class="menu"></aside>
+    </div>
+
+    <div class="container">
+      <div class="main"></div>
+    </div>
+
+    <div class="container">
+      <div class="about-us"></div>
+    </div>
+
+    <div class="container">
+      <div class="numbers"></div>
+    </div>
+
+    <div class="container">
+      <footer class="footer"></footer>
+    </div>
     <script src="scripts/main.js"></script>
   </body>
+
 </html>

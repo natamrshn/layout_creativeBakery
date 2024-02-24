@@ -1,0 +1,12 @@
+.icon {
+  &--logo {
+    width: 136px;
+    height: 32px;
+  }
+
+  &--menu {
+    @include on-desktop {
+      display: none;
+    }
+  }
+}
