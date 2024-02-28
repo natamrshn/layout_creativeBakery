@@ -1,0 +1,20 @@
+.main {
+  &__title {
+    color: $accent-orange;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 85%;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 104px;
+  }
+
+  &__description {
+    color: $black;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: left;
+    margin-top: 24px;
+  }
+}

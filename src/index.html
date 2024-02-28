@@ -1,36 +1,49 @@
 <!doctype html>
-<html lang="en">
-
+<html
+  lang="en"
+  class="page"
+>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0" />
-    <title>Title</title>
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-          rel="stylesheet">
-    <link rel="stylesheet"
-          href="./styles/main.scss" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>CREATIVE BAKERY</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/main.scss"
+    />
   </head>
 
-  <body>
+  <body class="page__body">
     <div class="container">
-      <header class="header">
+      <header class="header header--margin">
         <div class="header__content">
           <img
             src="./images/icons/Logo.svg"
             alt="logo"
             class="icon icon--logo"
-          >
-
-          <img
-            src="./images/icons/Icon-menu.svg"
-            alt="burger menu"
-            class="icon icon--menu"
-          >
+          />
+          <a href="#menu">
+            <img
+              src="./images/icons/Icon-menu.svg"
+              alt="burger menu"
+              class="icon icon--menu"
+            />
+          </a>
 
           <ul class="header__nav">
             <li>
@@ -43,7 +56,10 @@
               <a href="#">Blog</a>
             </li>
             <li class="header__nav header__nav--contact-us">
-              <img src="./images/icons/Icon-phone.svg" alt="icon phone">
+              <img
+                src="./images/icons/Icon-phone.svg"
+                alt="icon phone"
+              />
               <a href="#">Contact us</a>
             </li>
           </ul>
@@ -52,23 +68,230 @@
     </div>
 
     <div class="container">
-      <div class="hero-section"></div>
+      <div class="hero-section">
+        <p class="hero-section__description">
+          We bake your fantasies — croissants, cakes, cookies, and cupcakes.
+        </p>
+        <h1 class="hero-section__title">Creative bakery</h1>
+        <div class="hero-section__bg-img"></div>
+        <button class="hero-section__button">
+          <img
+            src="./images/icons/Icon-cookie.svg"
+            alt="icon cookie"
+            class="icon icon--cookie"
+          />
+          <p class="hero-section__button--text">
+            <!-- как назвать класс по БЭМ -->
+            Learn more
+          </p>
+        </button>
+      </div>
+    </div>
+
+    <div class="container page__menu">
+      <aside
+        class="menu"
+        id="menu"
+      >
+        <div class="menu__nav">
+          <img
+            src="./images/icons/Logo.svg"
+            alt="logo"
+            class="icon icon--logo"
+          />
+          <a href="#menu">
+            <img
+              src="./images/icons/Icon-menu.svg"
+              alt="burger menu"
+              class="icon icon--menu"
+            />
+          </a>
+        </div>
+      </aside>
     </div>
 
     <div class="container">
-      <aside class="menu"></aside>
+      <div class="main">
+        <h2 class="main__title">What we bake</h2>
+        <p class="main__description">
+          We can customize our cookies right for your needs. Just imagine it
+        </p>
+
+        <div class="cards">
+          <div class="cards__item">
+            <img
+              src="./images/photo-product-01.svg"
+              alt="photo-product-01"
+              class="cards__image"
+            />
+            <p class="cards__category">Cakes</p>
+            <p class="cards__description">
+              Oatmeal cookies with golden raisins, orange zest and chocolate
+              chips
+            </p>
+            <button class="cards__button">
+              <img
+                src="./images/icons/Icon-arrow.svg"
+                alt="Icon-arrow"
+                class="icon icon--button"
+              />
+              <p class="cards__button-text">order</p>
+            </button>
+          </div>
+
+          <div class="cards__item">
+            <img
+              src="./images/photo-product-02.svg"
+              alt="photo-product-02"
+              class="cards__image"
+            />
+            <p class="cards__category">Cakes</p>
+            <p class="cards__description">
+              Chocolate biscuit coffee cake topped with a buttercream and powder
+            </p>
+            <button class="cards__button">
+              <img
+                src="./images/icons/Icon-arrow.svg"
+                alt="Icon-arrow"
+                class="icon icon--button"
+              />
+              <p class="cards__button-text">order</p>
+            </button>
+          </div>
+
+          <div class="cards__item">
+            <img
+              src="./images/photo-product-03.svg"
+              alt="photo-product-03"
+              class="cards__image"
+            />
+            <p class="cards__category">Donuts</p>
+            <p class="cards__description">
+              Light multi-layered croissant strewn with cinammon and almond
+              “petals”
+            </p>
+            <button class="cards__button">
+              <img
+                src="./images/icons/Icon-arrow.svg"
+                alt="Icon-arrow"
+                class="icon icon--button"
+              />
+              <p class="cards__button-text">order</p>
+            </button>
+          </div>
+
+          <div class="cards__item">
+            <img
+              src="./images/photo-product-04.svg"
+              alt="photo-product-04"
+              class="cards__image"
+            />
+            <p class="cards__category">Donuts</p>
+            <p class="cards__description">
+              Light multi-layered croissant strewn with coconut and nuts
+            </p>
+            <button class="cards__button">
+              <img
+                src="./images/icons/Icon-arrow.svg"
+                alt="Icon-arrow"
+                class="icon icon--button"
+              />
+              <p class="cards__button-text">order</p>
+            </button>
+          </div>
+
+          <div class="cards__item">
+            <img
+              src="./images/photo-product-05.svg"
+              alt="photo-product-05"
+              class="cards__image"
+            />
+            <p class="cards__category">Cakes</p>
+            <p class="cards__description">
+              Chocolate salted caramel, Vanilla frutti pebbles
+            </p>
+            <button class="cards__button">
+              <img
+                src="./images/icons/Icon-arrow.svg"
+                alt="Icon-arrow"
+                class="icon icon--button"
+              />
+              <p class="cards__button-text">order</p>
+            </button>
+          </div>
+
+          <div class="cards__item">
+            <img
+              src="./images/photo-product-06.svg"
+              alt="photo-product-06"
+              class="cards__image"
+            />
+            <p class="cards__category">Cookies</p>
+            <p class="cards__description">
+              Oatmeal cookies with golden raisins, orange zest and chocolate
+              chips
+            </p>
+            <button class="cards__button">
+              <img
+                src="./images/icons/Icon-arrow.svg"
+                alt="Icon-arrow"
+                class="icon icon--button"
+              />
+              <p class="cards__button-text">order</p>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="container">
-      <div class="main"></div>
+      <div class="about-us">
+        <h2 class="about-us__title">
+          Few words
+          <br />
+          About us
+        </h2>
+        <p class="about-us__description">
+          Like many design teams, Onfido made the transition from Abstract +
+          Sketch, to Figma in the last couple of years. One of the common
+          resistance points internally before making that switch, was Figma’s
+          lack of Git-style branching that Abstract enabled. The design team had
+          come to rely on branching and had built a lot of our processes around
+          it.
+        </p>
+      </div>
     </div>
 
     <div class="container">
-      <div class="about-us"></div>
-    </div>
+      <div class="numbers numbers--margin">
+        <div class="numbers__wrapper">
+          <div class="numbers__number">2015</div>
+          <p class="numbers__description">Foundation year</p>
+        </div>
 
-    <div class="container">
-      <div class="numbers"></div>
+        <div class="numbers__wrapper">
+          <div class="numbers__number numbers__number2">23</div>
+          <p class="numbers__description">Stores</p>
+        </div>
+
+        <div class="numbers__wrapper">
+          <div class="numbers__number">155</div>
+          <p class="numbers__description">Companies</p>
+        </div>
+
+        <div class="numbers__wrapper">
+          <div class="numbers__number">10k+</div>
+          <p class="numbers__description">Clients</p>
+        </div>
+        <!--
+        <div class="numbers__img">
+          <img
+            src="./images/Crumbs.svg"
+            alt="Crumbs"
+            class="numbers__img"
+          />
+        </div> -->
+      </div>
     </div>
 
     <div class="container">
@@ -76,5 +299,4 @@
     </div>
     <script src="scripts/main.js"></script>
   </body>
-
 </html>

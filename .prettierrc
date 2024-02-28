@@ -1,16 +1,20 @@
 {
-  "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 500,
-  "editor.fontSize": 15,
-  "editor.tabSize": 2,
-  "editor.renderWhitespace": "boundary",
-  "editor.detectIndentation": false,
-
-  "editor.codeActionsOnSave": {
-    "source.fixAll": "always",
-    "source.fixAll.eslint": "always"
-  },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnType": true,
-  "editor.formatOnSave": true
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "printWidth": 80,
+  "overrides": [
+    {
+      "files": "*.html",
+      "options": {
+        "parser": "html",
+        "insertPragma": false,
+        "endOfLine": "auto",
+        "singleAttributePerLine": true,
+        "htmlWhitespaceSensitivity": "ignore"
+      }
+    }
+  ]
 }
