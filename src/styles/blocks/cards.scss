@@ -1,20 +1,45 @@
 .cards {
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+
+    @include on-tablet {
+      margin: 0 auto;
+    }
+
+    @include on-desktop {
+      @include content-padding-inline;
+      &--right-margin {
+        margin-right: 328px;
+      }
+
+      &--left-margin {
+        margin-left: 328px;
+      }
+    }
+  }
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 
   @include on-tablet {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    flex-direction: row;
   }
 
   &__item {
     display: flex;
     flex-direction: column;
     margin: 56px auto 0;
+
+    @include on-tablet {
+      // width: 48%;
+    }
 
     &:hover {
       scale: 1.03;
@@ -29,6 +54,7 @@
     @include on-tablet {
       width: 328px;
       height: 424px;
+      object-fit: cover;
     }
   }
 
@@ -58,7 +84,7 @@
     display: flex;
     gap: 8px;
     align-items: center;
-    padding: 4px 0px 4px 0px;
+    padding: 4px 0;
     border: none;
     background: transparent;
 

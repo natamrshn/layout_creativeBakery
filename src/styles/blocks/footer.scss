@@ -1,0 +1,68 @@
+.footer {
+  background-color: $black;
+
+  &__menu-title {
+    color: $grey;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 40px;
+  }
+
+  &__menu-item {
+    color: $white;
+    font-size: 16px;
+    margin-top: 16px;
+  }
+
+  &__contact-us {
+    color: $white;
+    font-size: 48px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 64px;
+  }
+
+  &__call-us {
+    color: rgb(127, 128, 150);
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 40px;
+  }
+
+  &__phone-numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+  }
+
+  &__phone-number {
+    color: $white;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  &__email {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 40px;
+  }
+
+  &__email-title {
+    color: rgb(127, 128, 150);
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  &__email-adress {
+    color: $white;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
