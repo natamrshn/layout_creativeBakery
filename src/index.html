@@ -11,6 +11,11 @@
     />
     <title>CREATIVE BAKERY</title>
     <link
+      rel="icon"
+      type="favicon"
+      href="./images/icons/Icon-cookie.svg"
+    />
+    <link
       rel="preconnect"
       href="https://fonts.googleapis.com"
     />
@@ -72,8 +77,10 @@
         <p class="hero-section__description">
           We bake your fantasies — croissants, cakes, cookies, and cupcakes.
         </p>
+
         <h1 class="hero-section__title">Creative bakery</h1>
         <div class="hero-section__bg-img"></div>
+
         <button class="hero-section__button">
           <img
             src="./images/icons/Icon-cookie.svg"
@@ -99,14 +106,27 @@
             alt="logo"
             class="icon icon--logo"
           />
-          <a href="#menu">
+          <a href="#">
             <img
-              src="./images/icons/Icon-menu.svg"
+              src="./images/icons/Icon-close.svg"
               alt="burger menu"
-              class="icon icon--menu"
+              class="icon icon--close"
             />
           </a>
         </div>
+
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#">Products</a></li>
+          <li class="menu__item"><a href="#">About Us</a></li>
+          <li class="menu__item"><a href="#">Blog</a></li>
+          <li class="header__nav--contact-us">
+            <img
+              src="./images/icons/Icon-phone.svg"
+              alt="icon phone"
+            />
+            <a href="#">Contact us</a>
+          </li>
+        </ul>
       </aside>
     </div>
 
@@ -118,134 +138,127 @@
         </p>
 
         <div class="cards">
-          <div class="cards-wrapper cards-wrapper--right-margin">
-            <div class="cards__item">
+          <div class="cards__item">
+            <img
+              src="./images/photo-product-01.svg"
+              alt="photo-product-01"
+              class="cards__image"
+            />
+            <p class="cards__category">Cakes</p>
+            <p class="cards__description">
+              Oatmeal cookies with golden raisins, orange zest and chocolate
+              chips
+            </p>
+            <button class="cards__button">
               <img
-                src="./images/photo-product-01.svg"
-                alt="photo-product-01"
-                class="cards__image"
+                src="./images/icons/Icon-arrow.svg"
+                alt="Icon-arrow"
+                class="icon icon--button"
               />
-              <p class="cards__category">Cakes</p>
-              <p class="cards__description">
-                Oatmeal cookies with golden raisins, orange zest and chocolate
-                chips
-              </p>
-              <button class="cards__button">
-                <img
-                  src="./images/icons/Icon-arrow.svg"
-                  alt="Icon-arrow"
-                  class="icon icon--button"
-                />
-                <p class="cards__button-text">order</p>
-              </button>
-            </div>
-
-            <div class="cards__item">
-              <img
-                src="./images/photo-product-02.svg"
-                alt="photo-product-02"
-                class="cards__image"
-              />
-              <p class="cards__category">Cakes</p>
-              <p class="cards__description">
-                Chocolate biscuit coffee cake topped with a buttercream and
-                powder
-              </p>
-              <button class="cards__button">
-                <img
-                  src="./images/icons/Icon-arrow.svg"
-                  alt="Icon-arrow"
-                  class="icon icon--button"
-                />
-                <p class="cards__button-text">order</p>
-              </button>
-            </div>
+              <p class="cards__button-text">order</p>
+            </button>
           </div>
 
-          <div class="cards-wrapper cards-wrapper--left-margin">
-            <div class="cards__item">
+          <div class="cards__item">
+            <img
+              src="./images/photo-product-02.svg"
+              alt="photo-product-02"
+              class="cards__image"
+            />
+            <p class="cards__category">Cakes</p>
+            <p class="cards__description">
+              Chocolate biscuit coffee cake topped with a buttercream and powder
+            </p>
+            <button class="cards__button">
               <img
-                src="./images/photo-product-03.svg"
-                alt="photo-product-03"
-                class="cards__image"
+                src="./images/icons/Icon-arrow.svg"
+                alt="Icon-arrow"
+                class="icon icon--button"
               />
-              <p class="cards__category">Donuts</p>
-              <p class="cards__description">
-                Light multi-layered croissant strewn with cinammon and almond
-                “petals”
-              </p>
-              <button class="cards__button">
-                <img
-                  src="./images/icons/Icon-arrow.svg"
-                  alt="Icon-arrow"
-                  class="icon icon--button"
-                />
-                <p class="cards__button-text">order</p>
-              </button>
-            </div>
-
-            <div class="cards__item">
-              <img
-                src="./images/photo-product-04.svg"
-                alt="photo-product-04"
-                class="cards__image"
-              />
-              <p class="cards__category">Donuts</p>
-              <p class="cards__description">
-                Light multi-layered croissant strewn with coconut and nuts
-              </p>
-              <button class="cards__button">
-                <img
-                  src="./images/icons/Icon-arrow.svg"
-                  alt="Icon-arrow"
-                  class="icon icon--button"
-                />
-                <p class="cards__button-text">order</p>
-              </button>
-            </div>
+              <p class="cards__button-text">order</p>
+            </button>
           </div>
 
-          <div class="cards-wrapper cards-wrapper--right-margin">
-            <div class="cards__item">
+          <div class="cards__item">
+            <img
+              src="./images/photo-product-03.svg"
+              alt="photo-product-03"
+              class="cards__image"
+            />
+            <p class="cards__category">Donuts</p>
+            <p class="cards__description">
+              Light multi-layered croissant strewn with cinammon and almond
+              “petals”
+            </p>
+            <button class="cards__button">
               <img
-                src="./images/photo-product-05.svg"
-                alt="photo-product-05"
-                class="cards__image"
+                src="./images/icons/Icon-arrow.svg"
+                alt="Icon-arrow"
+                class="icon icon--button"
               />
-              <p class="cards__category">Cakes</p>
-              <p class="cards__description">
-                Chocolate salted caramel, Vanilla frutti pebbles
-              </p>
-              <button class="cards__button">
-                <img
-                  src="./images/icons/Icon-arrow.svg"
-                  alt="Icon-arrow"
-                  class="icon icon--button"
-                />
-                <p class="cards__button-text">order</p>
-              </button>
-            </div>
+              <p class="cards__button-text">order</p>
+            </button>
+          </div>
 
-            <div class="cards__item">
+          <div class="cards__item">
+            <img
+              src="./images/photo-product-04.svg"
+              alt="photo-product-04"
+              class="cards__image"
+            />
+            <p class="cards__category">Donuts</p>
+            <p class="cards__description">
+              Light multi-layered croissant strewn with coconut and nuts
+            </p>
+            <button class="cards__button">
               <img
-                src="./images/photo-product-06.svg"
-                alt="photo-product-06"
-                class="cards__image"
+                src="./images/icons/Icon-arrow.svg"
+                alt="Icon-arrow"
+                class="icon icon--button"
               />
-              <p class="cards__category">Cookies</p>
-              <p class="cards__description">
-                Oatmeal cookies with golden raisins, orange zest and chocolate
-                chips
-              </p>
-              <button class="cards__button">
-                <img
-                  src="./images/icons/Icon-arrow.svg"
-                  alt="Icon-arrow"
-                  class="icon icon--button"
-                />
-                <p class="cards__button-text">order</p>
-              </button>
-            </div>
+              <p class="cards__button-text">order</p>
+            </button>
+          </div>
+
+          <div class="cards__item">
+            <img
+              src="./images/photo-product-05.svg"
+              alt="photo-product-05"
+              class="cards__image"
+            />
+            <p class="cards__category">Cakes</p>
+            <p class="cards__description">
+              Chocolate salted caramel, Vanilla frutti pebbles
+            </p>
+            <button class="cards__button">
+              <img
+                src="./images/icons/Icon-arrow.svg"
+                alt="Icon-arrow"
+                class="icon icon--button"
+              />
+              <p class="cards__button-text">order</p>
+            </button>
+          </div>
+
+          <div class="cards__item">
+            <img
+              src="./images/photo-product-06.svg"
+              alt="photo-product-06"
+              class="cards__image"
+            />
+            <p class="cards__category">Cookies</p>
+            <p class="cards__description">
+              Oatmeal cookies with golden raisins, orange zest and chocolate
+              chips
+            </p>
+            <button class="cards__button">
+              <img
+                src="./images/icons/Icon-arrow.svg"
+                alt="Icon-arrow"
+                class="icon icon--button"
+              />
+              <p class="cards__button-text">order</p>
+            </button>
           </div>
         </div>
       </div>
@@ -293,8 +306,8 @@
       </div>
     </div>
 
-    <div>
-      <footer class="footer">
+    <footer class="footer">
+      <div class="container">
         <div class="header__logo">
           <img
             src="./images/icons/Bakerlab_white_logo.svg"
@@ -310,7 +323,11 @@
             <p class="footer__menu-item">Blog</p>
             <p class="footer__menu-item">Terms & Privacy</p>
           </div>
-          <div class="footer__contact-us">Contact <br> us</div>
+          <div class="footer__contact-us">
+            Contact
+            <br />
+            us
+          </div>
           <div class="footer__call-us">Call us</div>
 
           <div class="footer__phone-numbers">
@@ -330,8 +347,9 @@
             <div class="footer__icon"><a href="#"></a></div>
           </div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
+
     <script src="scripts/main.js"></script>
   </body>
 </html>

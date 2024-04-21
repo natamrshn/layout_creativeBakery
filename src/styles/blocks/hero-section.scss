@@ -1,4 +1,6 @@
 .hero-section {
+  position: relative;
+
   &__description {
     color: $black;
     font-size: 16px;
@@ -28,23 +30,13 @@
     margin-top: 32px;
 
     @include on-tablet {
-      position: absolute;
-      z-index: 1;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      margin: 0;
       font-size: 80px;
       white-space: nowrap;
     }
 
     @include on-desktop {
       font-size: 136px;
-      position: absolute;
-      z-index: 1;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+
       white-space: nowrap;
     }
   }
@@ -59,7 +51,7 @@
 
     @include on-tablet {
       position: absolute;
-      z-index: 0;
+      z-index: -1;
       width: 326px;
       height: 328px;
       top: 50%;
@@ -69,7 +61,7 @@
 
     @include on-desktop {
       position: absolute;
-      z-index: 0;
+      z-index: -1;
       width: 544px;
       height: 546px;
       top: 50%;
@@ -82,16 +74,18 @@
     width: 288px;
     height: 56px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     gap: 6px;
     align-items: center;
-    padding: 20px 71px 20px 71px;
+    padding: 20px 71px;
     border: 2px solid $accent-orange;
     border-radius: 32px;
     background: transparent;
     cursor: pointer;
-    margin: 0 auto;
+
+    @include on-desktop {
+      margin-top: 64px;
+    }
 
     &--text {
       color: $accent-orange;
@@ -100,23 +94,13 @@
       text-transform: uppercase;
     }
 
-    @include on-tablet {
-      margin: 425px auto 0;
+    &:hover {
+      color: $white;
+      background-color: $accent-orange;
+
+      &::before {
+        background-color: $white;
+      }
     }
-
-    // &:hover {
-    //   transition: all 0.3s;
-    //   background-color: $accent-orange;
-
-    //   .icon path {
-    //     fill: #fff;
-    //     transition: all 0.3s;
-    //   }
-
-    //   .hero__section--text {
-    //     color: #fff;
-    //     transition: all 0.3s;
-    //   }
-    // }
   }
 }
