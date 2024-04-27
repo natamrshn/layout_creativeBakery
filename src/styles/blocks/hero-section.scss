@@ -83,6 +83,10 @@
     background: transparent;
     cursor: pointer;
 
+    @include on-tablet {
+      margin: 0 auto;
+    }
+
     @include on-desktop {
       margin-top: 64px;
     }
@@ -95,12 +99,15 @@
     }
 
     &:hover {
-      color: $white;
-      background-color: $accent-orange;
-
-      &::before {
-        background-color: $white;
+      .icon--cookie {
+        fill: $white;
       }
+
+      .hero-section__button--text { //как тут пофиксить этот класс
+        color: $white;
+      }
+
+      background-color: $accent-orange;
     }
   }
 }

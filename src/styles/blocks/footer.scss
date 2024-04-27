@@ -1,5 +1,10 @@
 .footer {
   background-color: $black;
+  @include page-grid;
+
+  &__logo {
+    margin-top: 61px;
+  }
 
   &__menu-title {
     color: $grey;
@@ -21,6 +26,10 @@
     text-align: left;
     text-transform: uppercase;
     margin-top: 64px;
+
+    @include on-tablet {
+      grid-column: 5/ 9;
+    }
   }
 
   &__call-us {
@@ -64,5 +73,22 @@
     color: $white;
     font-size: 16px;
     font-weight: 400;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 34px;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  &__rules {
+    color: $grey;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -1%;
+    text-align: left;
+    margin: 40px 0 56px;
   }
 }

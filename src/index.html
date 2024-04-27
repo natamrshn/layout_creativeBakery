@@ -70,32 +70,33 @@
           </ul>
         </div>
       </header>
-    </div>
 
-    <div class="container">
       <div class="hero-section">
         <p class="hero-section__description">
           We bake your fantasies — croissants, cakes, cookies, and cupcakes.
         </p>
 
-        <h1 class="hero-section__title">Creative bakery</h1>
-        <div class="hero-section__bg-img"></div>
+        <div class="hero-section__bg-img">
+          <h1 class="hero-section__title">Creative bakery</h1>
+        </div>
 
         <button class="hero-section__button">
-          <img
-            src="./images/icons/Icon-cookie.svg"
-            alt="icon cookie"
+          <svg
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
             class="icon icon--cookie"
-          />
+          >
+            <path
+              d="M21.9422 11.9926C19.209 11.9594 17.002 9.73912 17.002 6.99816C14.261 6.99816 12.041 4.79156 12.0074 2.0588C10.9426 1.89708 9.85394 2.07052 8.8934 2.55957L6.19302 3.93533C5.22092 4.43072 4.43068 5.22123 3.93561 6.19349L2.56452 8.88406C2.06798 9.85879 1.89269 10.9657 2.06374 12.0461L2.53562 15.0253C2.7065 16.1047 3.21462 17.1023 3.98717 17.8753L6.12662 20.0143C6.89673 20.7847 7.89098 21.2914 8.96684 21.4619L11.9633 21.9365C13.0379 22.1069 14.1391 21.9322 15.109 21.4381L17.8094 20.0627C18.7814 19.5672 19.5716 18.7768 20.0668 17.8046L21.4379 15.114C21.9285 14.1515 22.1023 13.0602 21.9422 11.9926ZM8.87504 16.3745C8.18481 16.3745 7.62505 15.8148 7.62505 15.1246C7.62505 14.4343 8.18481 13.8746 8.87504 13.8746C9.56527 13.8746 10.125 14.4343 10.125 15.1246C10.125 15.8148 9.56527 16.3745 8.87504 16.3745ZM10.125 10.1247C9.4348 10.1247 8.87504 9.56491 8.87504 8.87468C8.87504 8.18446 9.4348 7.62471 10.125 7.62471C10.8153 7.62471 11.375 8.18446 11.375 8.87468C11.375 9.56491 10.8153 10.1247 10.125 10.1247ZM16.375 15.1246C15.6848 15.1246 15.125 14.5648 15.125 13.8746C15.125 13.1844 15.6848 12.6246 16.375 12.6246C17.0652 12.6246 17.625 13.1844 17.625 13.8746C17.625 14.5648 17.0652 15.1246 16.375 15.1246Z"
+            />
+          </svg>
           <p class="hero-section__button--text">
             <!-- как назвать класс по БЭМ -->
             Learn more
           </p>
         </button>
       </div>
-    </div>
 
-    <div class="container">
       <aside
         class="menu page__menu"
         id="menu"
@@ -128,9 +129,7 @@
           </li>
         </ul>
       </aside>
-    </div>
 
-    <div class="container">
       <div class="main">
         <h2 class="main__title">What we bake</h2>
         <p class="main__description">
@@ -262,9 +261,7 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="container">
       <div class="about-us">
         <h2 class="about-us__title">
           Few words
@@ -280,73 +277,93 @@
           it.
         </p>
       </div>
-    </div>
 
-    <div class="container">
-      <div class="numbers__card-wrapper">
-        <article class="numbers__card">
-          <p class="numbers__card-title">2015</p>
-          <p class="numbers__card-description">Foundation year</p>
-        </article>
+      <div class="about-us-bg-img">
+        <div class="numbers__card-wrapper">
+          <article class="numbers__card">
+            <p class="numbers__card-title">2015</p>
+            <p class="numbers__card-description">Foundation year</p>
+          </article>
 
-        <article class="numbers__card">
-          <p class="numbers__card-title">23</p>
-          <p class="numbers__card-description">Stores</p>
-        </article>
+          <article class="numbers__card">
+            <p class="numbers__card-title">23</p>
+            <p class="numbers__card-description">Stores</p>
+          </article>
 
-        <article class="numbers__card">
-          <p class="numbers__card-title">155</p>
-          <p class="numbers__card-description">Companies</p>
-        </article>
+          <article class="numbers__card">
+            <p class="numbers__card-title">155</p>
+            <p class="numbers__card-description">Companies</p>
+          </article>
 
-        <article class="numbers__card numbers__card--margin-bottom">
-          <p class="numbers__card-title">10k+</p>
-          <p class="numbers__card-description">Clients</p>
-        </article>
+          <article class="numbers__card numbers__card--margin-bottom">
+            <p class="numbers__card-title">10k+</p>
+            <p class="numbers__card-description">Clients</p>
+          </article>
+        </div>
       </div>
     </div>
 
     <footer class="footer">
       <div class="container">
-        <div class="header__logo">
-          <img
-            src="./images/icons/Bakerlab_white_logo.svg"
-            alt="logo"
-          />
+        <img
+          src="./images/icons/Bakerlab_white_logo.svg"
+          alt="logo"
+          class="footer__logo"
+        />
+
+        <div class="footer__menu">
+          <p class="footer__menu-title">Menu</p>
+          <p class="footer__menu-item">Products</p>
+          <p class="footer__menu-item">About Us</p>
+          <p class="footer__menu-item">Blog</p>
+          <p class="footer__menu-item">Terms & Privacy</p>
+        </div>
+        <div class="footer__contact-us">
+          Contact
+          <br />
+          us
+        </div>
+        <div class="footer__call-us">Call us</div>
+
+        <div class="footer__phone-numbers">
+          <div class="footer__phone-number">(629) 555-0129</div>
+          <div class="footer__phone-number">(603) 555-0123</div>
+          <div class="footer__phone-number">(704) 555-0127</div>
         </div>
 
-        <div class="footer">
-          <div class="footer__menu">
-            <p class="footer__menu-title">Menu</p>
-            <p class="footer__menu-item">Products</p>
-            <p class="footer__menu-item">About Us</p>
-            <p class="footer__menu-item">Blog</p>
-            <p class="footer__menu-item">Terms & Privacy</p>
-          </div>
-          <div class="footer__contact-us">
-            Contact
-            <br />
-            us
-          </div>
-          <div class="footer__call-us">Call us</div>
+        <div class="footer__email">
+          <div class="footer__email-title">Email us</div>
+          <p class="footer__email-adress">bakerlab@example.com</p>
+        </div>
 
-          <div class="footer__phone-numbers">
-            <div class="footer__phone-number">(629) 555-0129</div>
-            <div class="footer__phone-number">(603) 555-0123</div>
-            <div class="footer__phone-number">(704) 555-0127</div>
+        <div class="footer__icons">
+          <div class="footer__icon">
+            <a href="#">
+              <img
+                src="./images/icons/Icon-facebook.svg"
+                alt="icon facebook"
+              />
+            </a>
           </div>
-
-          <div class="footer__email">
-            <div class="footer__email-title">Email us</div>
-            <p class="footer__email-adress">bakerlab@example.com</p>
+          <div class="footer__icon">
+            <a href="#">
+              <img
+                src="./images/icons/Icon-instagram.svg"
+                alt="icon facebook"
+              />
+            </a>
           </div>
-
-          <div class="footer__icons">
-            <div class="footer__icon"><a href="#"></a></div>
-            <div class="footer__icon"><a href="#"></a></div>
-            <div class="footer__icon"><a href="#"></a></div>
+          <div class="footer__icon">
+            <a href="#">
+              <img
+                src="./images/icons/Icon-twitter.svg"
+                alt="icon facebook"
+              />
+            </a>
           </div>
         </div>
+
+        <div class="footer__rules">© Bakerlab 2022</div>
       </div>
     </footer>
 
